@@ -14,7 +14,7 @@ const session = new dl.Session(graph, math)
 const xs = []
 const ys = []
 for (let i = 0; i < 100; i ++) {
-  const x = Math.random()
+  const x = Math.random() * 2 - 1
   xs.push(dl.Array1D.new([x]))
   ys.push(dl.Array1D.new([x*x]))
 }
